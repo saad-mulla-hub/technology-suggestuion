@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback - TechReview</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #38bdf8;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: #020617;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #cbd5f5;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+button {
+    background-color: #38bdf8;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0ea5e9;
+}
+</style>
+
+</head>
+<body>
+
+<h1>📝 Feedback Form</h1>
+
+<form action="thankyou.html">
+
+    <!-- Name -->
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <!-- Email -->
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <!-- Rating (Radio Buttons) -->
+    <label>Rate Your Experience</label>
+    <input type="radio" name="rating"> Excellent
+    <input type="radio" name="rating"> Good
+    <input type="radio" name="rating"> Average
+    <input type="radio" name="rating"> Poor
+
+    <!-- Purpose (Select Dropdown) -->
+    <label for="purpose">Why did you visit our website?</label>
+    <select id="purpose">
+        <option>Buying Guide</option>
+        <option>Product Research</option>
+        <option>Casual Browsing</option>
+        <option>Other</option>
+    </select>
+
+    <!-- Features liked (Checkboxes) -->
+    <label>What did you like?</label>
+    <input type="checkbox"> Design<br>
+    <input type="checkbox"> Content Quality<br>
+    <input type="checkbox"> Ease of Use<br>
+    <input type="checkbox"> Performance<br>
+
+    <!-- Feedback Message -->
+    <label for="message">Your Feedback</label>
+    <textarea id="message" rows="4" placeholder="Write your feedback here..."></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Feedback</button>
+
+</form>
+
+</body>
+</html>
